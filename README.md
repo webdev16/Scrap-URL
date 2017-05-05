@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Requirements
 
-Things you may want to cover:
+* Ruby version: 2.3.0
 
-* Ruby version
+* Rails: >= 5.0.0
 
-* System dependencies
+* Database: postgresql
 
-* Configuration
 
-* Database creation
+## APIs
 
-* Database initialization
+This supporting 3 apis
 
-* How to run the test suite
+###### GET:  /pages 
+list pages
 
-* Services (job queues, cache servers, search engines, etc.)
+###### POST: /pages
+read pages and save to database
 
-* Deployment instructions
+parameter:
+  
+* url: page URL to scrap, eg: https://www.google.com
 
-* ...
+###### GET:  /pages/:id    # get a specific page
+
